@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Form Example</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    
+<div class="form-container">
+    <form class="form" method="post">
+        <span class="heading">Get in touch</span>
+        <input placeholder="Name" name="name" type="text" class="input" required="">
+        <input placeholder="Email" name="email"id="mail" type="email" class="input" required="">
+        <input placeholder="Email subject" name="subject" type="text" class="input">
+        <textarea placeholder="Say Hello" name="msg" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+        <div class="button-container">
+        <button class="send-button" name="send">Send</button>
+        <div class="reset-button-container">
+            <button id="reset-btn" class="reset-button" name="reset">Reset</button>
+        </div>
+    </form>
+</div>
+<?php
+        include("email.php");
+?>
+</div>
+</body>
+</html>
